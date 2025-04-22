@@ -1,0 +1,31 @@
+image:
+    repository: registry.gitlab.com/gaia-x/data-infrastructure-federation-services/tsa
+    # -- Image name
+    name: infohub
+mongo:
+    addr: mongodb+srv://vereign-mongodb-mongodb-svc.gxfs-vereign.svc.cluster.local/infohub?ssl=false
+    user: ENC[AES256_GCM,data:MzY5smU=,iv:2D38MpaYJreCNlwNcNcR3Dn2Ilyp5A2Jor6ZzUuEPoc=,tag:q2uqMlEvjelSgz5Fxba8Qg==,type:str]
+    pass: ENC[AES256_GCM,data:J++7Qth2E3wYbJ3UNkIfH9ziVWDJiEgKLJylKg==,iv:kiy32TCXI8CR+ulUyszkXvZ4bRda7bYmkV3Jpowpmt0=,tag:Jza5ySikEMckmsDAcLVL5A==,type:str]
+ingress:
+    frontendDomain: tsa.gxfs.dev
+    frontendTlsSecretName: wildcard-gxfs-dev
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age:
+        - recipient: age1nrk70nevtmrcgzjunsed43ar6dk3e06qt7tryqqprj9axv4e0djqa0n0cg
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSAxbmNyNzZLV2drdUdUcFpU
+            a0xnaFMzK2w3ZkZYZDBNcHp5NG8zaUJqV0hZCnV5cy9xWCt4UlZySjlzVFN6ZXFS
+            Wk1Ob1QrUDNveGpiSnVkdTNIY2VGa0UKLS0tIEF3dEhnWTAwUGZIS2RSbHlqWDk4
+            NUpKT0lwUEh1WDhreDd3aTFZRk9QaTAKBk/UCJAbtFzChaERRlWBWX6v/Aq7ojJo
+            j+gdwwqzSzbv7p5DB7rScKLWc9p4IuC9uM+r/COr5q5hfM2svpgVfw==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2022-08-08T15:19:45Z"
+    mac: ENC[AES256_GCM,data:F3+BDLmycL6V+Ja6RtgfMVTVbAIvpIM80XLt85YkZfxGLdP8TRqO8lgpACaa7ABkjOqxutfgSDfQn70g5TI7h2h/6mejKJZ7c3GFHmefeScplDcO9T9WbhrMtGMDQwM1Z3bIrEm6UnJ3qckT844gkGwr09H7ldf+sTFsIidNPx0=,iv:5mlVLyopZFOu+b6chM8ED3NCvz1qWYXYO/L+lkkJ3UA=,tag:1xoX2IaYTz0H+iFC8/bcRA==,type:str]
+    pgp: []
+    encrypted_regex: ^(user|pass)$
+    version: 3.7.3
