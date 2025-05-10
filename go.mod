@@ -4,7 +4,7 @@ go 1.24.0
 
 require (
 	github.com/eclipse-xfsc/microservice-core-go v1.1.0
-	github.com/go-jose/go-jose/v3 v3.0.1-0.20221117193127-916db76e8214
+	github.com/go-jose/go-jose/v3 v3.0.4
 	github.com/google/uuid v1.6.0
 	github.com/hyperledger/aries-framework-go v0.3.2
 	github.com/kelseyhightower/envconfig v1.4.0
